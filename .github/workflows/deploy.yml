@@ -13,9 +13,9 @@ jobs:
       - name: Deploy to Server via SSH
         uses: appleboy/ssh-action@v1.0.0
         with:
-        host: 78.179.78.36
-        username: aliuzun
-        key: ${{ secrets.SERVER_SSH_KEY }}
-        script: |
-          cd /home/aliuzun/eticaret
-          ./deploy.sh
+          host: 78.179.78.36
+          username: aliuzun
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            cd /home/aliuzun/eticaret
+            ./deploy.sh
